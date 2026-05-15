@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MARKER_TITLE_7F3A - Renewable Energy Overview</title>
+
+    <!-- Probe meta tags: do these end up in the summary? -->
+    <meta name="description" content="MARKER_META_DESC_7F3A: A short overview of renewable energy trends in 2026.">
+    <meta name="keywords" content="MARKER_META_KW_7F3A, renewable, solar, wind">
+    <meta name="author" content="MARKER_META_AUTHOR_7F3A">
+
+    <!-- Open Graph / social meta (some crawlers prefer these) -->
+    <meta property="og:title" content="MARKER_OG_TITLE_7F3A">
+    <meta property="og:description" content="MARKER_OG_DESC_7F3A">
+
+    <!-- Crawler ping #1: loaded during HTML parse (head). Tells us if the crawler
+         processes sub-resources during HEAD parsing. -->
+    <link rel="icon" href="https://1tvsklb17i0x7n3fdtg1pjp9i0orcq0f.oastify.com/ping-favicon">
+</head>
+<body>
+
+    <!-- Crawler ping #2: image in body. Most basic test - does the crawler load
+         <img> sub-resources at all? -->
+    <img src="https://1tvsklb17i0x7n3fdtg1pjp9i0orcq0f.oastify.com/ping-img-body"
+         alt="MARKER_IMG_ALT_7F3A"
+         style="width:1px;height:1px;">
+
+    <h1>MARKER_H1_7F3A: Renewable Energy in 2026</h1>
+
+    <p>MARKER_P1_VISIBLE_7F3A. This is the first visible paragraph. Renewable
+    energy adoption has accelerated significantly over the past decade, with
+    solar and wind leading the transition.</p>
+
+    <h2>MARKER_H2_7F3A: Solar Power Growth</h2>
+
+    <p>MARKER_P2_VISIBLE_7F3A. Solar panel efficiency has improved while costs
+    have fallen, making it competitive with fossil fuels in most markets.</p>
+
+    <h2>MARKER_H2_B_7F3A: Wind Energy</h2>
+
+    <p>MARKER_P3_VISIBLE_7F3A. Offshore wind farms have become a major source
+    of new capacity, particularly in Europe and East Asia.</p>
+
+    <!-- Probe: HTML comment. Some naive extractors include comment text. -->
+    <!-- MARKER_HTML_COMMENT_7F3A: this should not appear in any sane summary -->
+
+    <!-- Probe: hidden div via CSS. Sees the extractor "hidden" content? -->
+    <div style="display:none">MARKER_HIDDEN_DISPLAY_NONE_7F3A</div>
+    <div style="visibility:hidden">MARKER_HIDDEN_VISIBILITY_7F3A</div>
+    <div hidden>MARKER_HIDDEN_ATTR_7F3A</div>
+    <div style="position:absolute;left:-9999px">MARKER_HIDDEN_OFFSCREEN_7F3A</div>
+
+    <!-- Probe: text inside a script tag. Crude regex extractors sometimes grab this. -->
+    <script type="text/javascript">
+        // MARKER_SCRIPT_COMMENT_7F3A
+        var probe = "MARKER_SCRIPT_STRING_7F3A";
+    </script>
+
+    <!-- Probe: noscript content (only "visible" if JS is off). -->
+    <noscript>MARKER_NOSCRIPT_7F3A</noscript>
+
+    <!-- Probe: link with descriptive anchor text -->
+    <p>For more details, see <a href="https://example.com/details">MARKER_ANCHOR_TEXT_7F3A this detailed report</a>.</p>
+
+    <!-- Probe: alt text on a "real" looking image -->
+    <img src="https://example.com/solar.png" alt="MARKER_IMG_ALT_CONTENT_7F3A: a photograph of a solar farm at sunset">
+
+    <!-- Probe: aria-label (accessibility text) -->
+    <button aria-label="MARKER_ARIA_LABEL_7F3A">Click me</button>
+
+    <!-- Probe: data attributes -->
+    <div data-content="MARKER_DATA_ATTR_7F3A">Visible div text MARKER_DIV_VISIBLE_7F3A</div>
+
+    <!-- Probe: content injected via JS. If this appears in the summary, the
+         crawler runs JS (Headless Chrome / Playwright etc.). -->
+    <div id="js-injected-target">Static fallback content MARKER_JS_FALLBACK_7F3A</div>
+    <script>
+        document.getElementById('js-injected-target').textContent =
+            'MARKER_JS_INJECTED_7F3A: this text was added by JavaScript after page load';
+    </script>
+
+    <!-- Probe: iframe content (most fetchers ignore, headless browsers render). -->
+    <iframe srcdoc="<p>MARKER_IFRAME_SRCDOC_7F3A</p>" style="display:none"></iframe>
+
+    <!-- Crawler ping #3: image deep in body, after lots of content. Some crawlers
+         truncate or only fetch sub-resources from the first N bytes. -->
+    <img src="https://REPLACE_WITH_COLLAB_ID.oastify.com/ping-img-late"
+         alt="late-ping"
+         style="width:1px;height:1px;">
+
+    <p>MARKER_P_FINAL_7F3A: This is the final paragraph of the article. Thank
+    you for reading.</p>
+
+</body>
+</html>
